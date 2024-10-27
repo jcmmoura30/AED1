@@ -51,13 +51,13 @@ scanf("%d", &n);
             }
         }
 printf("Instancia %d\n", k);
-if (linha(matriz) && coluna(matriz) && grade(matriz))
-    printf("SIM\n");
-else
-    printf("NAO\n");
+    if (linha(matriz) && coluna(matriz) && grade(matriz))
+        printf("SIM\n");
+    else
+        printf("NAO\n");
 
-    printf("\n");
-  }
+        printf("\n");
+          }
 
     return 0;
 }
