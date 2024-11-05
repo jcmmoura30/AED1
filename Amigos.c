@@ -5,16 +5,23 @@ struct cel{
     int conteudo;
     struct cel*seg;
 }
+typedef struct conteudo celula; 
 int main()
 {
-    char nomes1[50], nomes2[50], nomes3[50];
+    celula *lst;
+    lst = malloc (sizeof(celula)); 
+    lst->seg = NULL;
+    char nomes1[50], nomes2[50], nomes3[10];
     char *novo;
+    celula c;
+    celula *p;
 
-    scanf("%s, %s, %s", &nomes1, &nomes2, &nomes3);
+    gets(nomes1, nomes2, nomes3);
     
-
-    cel *lst;
-    lst = NULL;
-
+    void Imprima (celula *lst) {
+    celula *p;
+    for (p = lst; p != NULL; p = p->seg)
+    printf ("%d\n", p->conteúdo);
+}
 return 0;
 }
