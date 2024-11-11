@@ -7,13 +7,13 @@ int compare(const void *a, const void *b) {
 }
 
 void processaLista(char *linha) {
-    char *itens[1000]; // Array para armazenar até 1000 itens
+    char *itens[1000]; 
     int totalItens = 0;
 
     // Divide a linha em itens separados por espaço
     char *token = strtok(linha, " ");
     while (token != NULL) {
-        itens[totalItens] = malloc(strlen(token) + 1); // Aloca memória para cada item
+        itens[totalItens] = malloc(strlen(token) + 1); 
         strcpy(itens[totalItens], token);
         totalItens++;
         token = strtok(NULL, " ");
@@ -39,7 +39,7 @@ int main() {
     scanf("%d", &n);
     getchar();  // Limpa o '\n' após a leitura de n
 
-    char linha[20000];  // Buffer grande o suficiente para armazenar até 1000 itens
+    char linha[20000];  
 
     for (int i = 0; i < n; i++) {
         fgets(linha, sizeof(linha), stdin);
