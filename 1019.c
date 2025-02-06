@@ -3,9 +3,9 @@
 int main() {
   int n, hours, minutes, remainingSeconds;
 
-  scanf("%d", &n); // Input seconds
+  scanf("%d", &n); 
 
-  hours = n / 3600; // Calculate hours
+  hours = n / 3600; 
   n = n % 3600;
   minutes = n / 60;
   remainingSeconds = n % 60;
